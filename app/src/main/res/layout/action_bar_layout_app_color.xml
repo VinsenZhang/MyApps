@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/action_bar"
+    android:background="@color/colorAccent"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:padding="15sp"
+        android:src="@drawable/back_white"
+        android:scaleType="fitCenter"
+        android:id="@+id/img_back"
+        android:layout_width="50dp"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/action_title"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      />
+
+    <ImageView
+        android:layout_gravity="end"
+        android:scaleType="fitCenter"
+        android:id="@+id/search_img"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        />
+
+
+</FrameLayout>

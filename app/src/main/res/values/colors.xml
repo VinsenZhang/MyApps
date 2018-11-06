@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4D4D</color>
+
+    <color name="home_tab_selected">#FF4D4D</color>
+    <color name="home_tab_unselected">#999999</color>
+
+
+    <color name="form_text">#44000000</color>
+
+
+
+    <color name="activity_bg">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="divider">#33333333</color>
+    <color name="list_item_title">#333333</color>
+
+    <color name="tips">#b8b8b8</color>
+    <color name="video_bg">#77000000</color>
+    <color name="gray">#808080</color>
+    <color name="half_trans_gray">#80000000</color>
+    <color name="tab_text">#ff5252</color>
+
+    <color name="date_tips">#66000000</color>
+    <color name="del_commend">#74b5f7</color>
+    <color name="blue">#0000FF</color>
+    <color name="not_login">#f2f2f2</color>
+
+    <color name="can_withdraw_bg">#ff4d4d</color>
+    <color name="withdrawing_bg">#d1d1d1</color>
+</resources>
