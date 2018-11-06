@@ -23,7 +23,7 @@ public class VideoFragment extends BaseFragment {
     }
 
     @Override
-    public void loadData(int model) {
+    public void loadData() {
 
     }
 

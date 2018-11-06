@@ -6,12 +6,5 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET"/>
 
-    <application>
-
-        <meta-data
-            android:name=".adapter.GlobalGlideConfig"
-            android:value="GlideModule" />
-
-    </application>
 
 </manifest>

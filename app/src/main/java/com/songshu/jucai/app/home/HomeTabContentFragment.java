@@ -4,13 +4,13 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.songshu.jucai.base.BaseFragment;
+import com.songshu.jucai.base.BaseLoadMoreFragment;
 
-public class HomeTabContentFragment extends BaseFragment {
+public class HomeTabContentFragment extends BaseLoadMoreFragment<String> {
 
 
     @Override
     public void init(Bundle savedInstanceState) {
-
     }
 
     @Override
@@ -19,12 +19,17 @@ public class HomeTabContentFragment extends BaseFragment {
     }
 
     @Override
-    public void loadData(int model) {
+    public void loadData() {
 
     }
 
     @Override
     public int getLayoutRes() {
         return 0;
+    }
+
+    @Override
+    protected void loadMore() {
+
     }
 }

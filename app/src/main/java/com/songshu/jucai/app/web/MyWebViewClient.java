@@ -6,9 +6,7 @@ import android.webkit.WebViewClient;
 
 import com.songshu.jucai.BuildConfig;
 import com.songshu.jucai.MyApp;
-import com.songshu.jucai.constants.AppConstants;
 import com.songshu.jucai.mylibrary.comm.CommUtils;
-import com.songshu.jucai.mylibrary.comm.PreUtils;
 
 import java.io.IOException;
 
@@ -22,9 +20,9 @@ public class MyWebViewClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        if (AppUtils.isWmbbScheme(url)) {
+        if (true) {
 
-            String token = PreUtils.getString(AppConstants.SPKEY.TOKEN, "");
+            String token ="";// PreUtils.getString(AppConstants.SPKEY.TOKEN, "");
 
             String version_string = "&version=" + BuildConfig.VERSION_NAME;
 

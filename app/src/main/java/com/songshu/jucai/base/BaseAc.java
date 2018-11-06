@@ -12,6 +12,7 @@ import android.support.annotation.LayoutRes;
 import android.support.v7.app.ActionBar;
 import android.view.View;
 
+import com.songshu.jucai.eventbus.MessageEvent;
 import com.songshu.jucai.mylibrary.swipeback.SwipeBackActivity;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.message.PushAgent;
@@ -21,15 +22,20 @@ import org.greenrobot.eventbus.Subscribe;
 
 import java.util.List;
 
-public abstract class BaseAc extends SwipeBackActivity {
+public abstract class BaseAc extends SwipeBackActivity implements View.OnClickListener{
 
     protected Activity mActivity;
 
 
-    protected static final int refresh_model = 1;
+    @Subscribe
+    public void onEvent(MessageEvent message){
 
-    protected static final int load_model = 2;
+    }
 
+    @Override
+    public void onClick(View v) {
+
+    }
 
     @Subscribe
     @Override

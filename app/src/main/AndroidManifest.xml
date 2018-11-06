@@ -60,56 +60,8 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
 
-
-        <activity
-            android:name=".scheme.SchemeActivity"
-            android:launchMode="singleTask">
-
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="songshu" />
-            </intent-filter>
-        </activity>
-
-
-        <activity
-            android:name=".app.user.UserDetailActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.SettingActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".app.web.WebActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.login.wechat.LoginActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.bind.BindTeacherActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.withdraw.BindWithdrawActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.question.NewerHelperActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.wallet.WalletActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.login.mobile.MobileLoginActivity"
-            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
 
         <activity
@@ -120,22 +72,6 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".app.user.withdraw.ActivityDoFiveWithdraw"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.withdraw.WithdrawRecordActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.tudi.ShoutuActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.tudi.TudiTabActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".app.detail.VideoDetailActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:launchMode="singleTask"
@@ -144,39 +80,7 @@
             android:name=".app.detail.ArticleDetailActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.withdraw.WithdrawActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.home.morecate.MoreAndAddCateActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.bind.BindAlipayActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.bind.BindWechatActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.bind.BindMobileActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.login.mobile.SmsCodeActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".app.user.withdraw.ActivityWithdrawFiveTask"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
 
-        <activity
-            android:name=".app.user.unbind.UnBindAlipayActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
 
         <!--UMENG-->
 
@@ -190,10 +94,10 @@
             android:name="UMENG_CHANNEL"
             android:value="${UMENG_CHANNEL_VALUE}" />
 
+        <meta-data
+            android:name=".adapter.GlobalGlideConfig"
+            android:value="GlideModule" />
 
-
-        <activity android:name=".app.user.message.MineMessageActivity" />
-        <activity android:name=".app.user.message.MessageReplayDetail" />
         <activity
             android:launchMode="singleTask"
             android:exported="true"

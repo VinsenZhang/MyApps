@@ -9,15 +9,11 @@ import com.songshu.jucai.base.BaseFragment;
 /**
  * 首页
  */
-public class HomeFragment extends BaseFragment implements View.OnClickListener {
+public class HomeFragment extends BaseFragment {
 
     private static final String TAG = HomeFragment.class.getSimpleName();
 
 
-    @Override
-    public void onClick(View v) {
-
-    }
 
     @Override
     public void init(Bundle savedInstanceState) {
@@ -30,7 +26,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     }
 
     @Override
-    public void loadData(int model) {
+    public void loadData() {
 
     }
 

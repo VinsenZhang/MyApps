@@ -18,17 +18,19 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
 
-public abstract class BaseFragment extends Fragment {
-
-    protected static final int refresh_model = 1;
-
-    protected static final int load_model = 2;
+public abstract class BaseFragment extends Fragment implements View.OnClickListener{
 
     protected Activity mActivity;
 
 
     protected <T extends View> T find(View contentView, int resId){
         return contentView.findViewById(resId);
+    }
+
+
+    @Override
+    public void onClick(View v) {
+
     }
 
     @Override
@@ -87,7 +89,7 @@ public abstract class BaseFragment extends Fragment {
     public abstract void initView(View contentView);
 
 
-    public abstract void loadData(int model);
+    public abstract void loadData();
 
 
     public abstract int getLayoutRes();
