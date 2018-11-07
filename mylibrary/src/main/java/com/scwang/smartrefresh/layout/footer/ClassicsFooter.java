@@ -16,7 +16,7 @@ import com.scwang.smartrefresh.layout.internal.ArrowDrawable;
 import com.scwang.smartrefresh.layout.internal.InternalClassics;
 import com.scwang.smartrefresh.layout.internal.ProgressDrawable;
 import com.scwang.smartrefresh.layout.util.DensityUtil;
-import com.songshu.jucai.mylibrary.R;
+import com.tag.man.mylibrary.R;
 
 /**
  * 经典上拉底部组件

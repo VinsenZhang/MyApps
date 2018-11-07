@@ -59,7 +59,7 @@ import com.scwang.smartrefresh.layout.listener.OnStateChangedListener;
 import com.scwang.smartrefresh.layout.util.DelayedRunnable;
 import com.scwang.smartrefresh.layout.util.DensityUtil;
 import com.scwang.smartrefresh.layout.util.ViscousFluidInterpolator;
-import com.songshu.jucai.mylibrary.R;
+import com.tag.man.mylibrary.R;
 
 import java.util.ArrayList;
 import java.util.List;

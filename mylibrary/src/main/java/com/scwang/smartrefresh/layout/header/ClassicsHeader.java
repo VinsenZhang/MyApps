@@ -17,7 +17,7 @@ import com.scwang.smartrefresh.layout.internal.ArrowDrawable;
 import com.scwang.smartrefresh.layout.internal.InternalClassics;
 import com.scwang.smartrefresh.layout.internal.ProgressDrawable;
 import com.scwang.smartrefresh.layout.util.DensityUtil;
-import com.songshu.jucai.mylibrary.R;
+import com.tag.man.mylibrary.R;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 

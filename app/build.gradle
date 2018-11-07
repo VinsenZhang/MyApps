@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'io.objectbox'
+
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.songshu.jucai"
+        applicationId "com.tag.man"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 27
-        versionName "2.3.2"
+        versionCode 1
+        versionName "1.0.0"
         multiDexEnabled true
 
         javaCompileOptions {
@@ -26,16 +26,16 @@ android {
 
     signingConfigs {
         debug {
-            keyAlias 'jucai01'
-            keyPassword 'jucai123456'
-            storeFile file('key\\jucai.jks')
-            storePassword 'jucai123456'
+            keyAlias 'tag'
+            keyPassword 'tag12345'
+            storeFile file('sign\\tag.jks')
+            storePassword 'tag12345'
         }
         release {
-            keyAlias 'jucai01'
-            keyPassword 'jucai123456'
-            storeFile file('key\\jucai.jks')
-            storePassword 'jucai123456'
+            keyAlias 'tag'
+            keyPassword 'tag12345'
+            storeFile file('sign\\tag.jks')
+            storePassword 'tag12345'
         }
     }
 
@@ -100,28 +100,12 @@ android {
 
 
         tencent {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tencent"]
+            manifestPlaceholders = [CHANNEL_VALUE: "tencent"]
         }
-//        huawei {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
-//        }
-//        _360 {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "360"]
-//        }
-//        xiaomi {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
-//        }
-//
-//        vivo {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vivo"]
-//        }
-//        oppo {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
-//        }
 
 
         productFlavors.all {
-            flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: "${name}"]
+            flavor -> flavor.manifestPlaceholders = [CHANNEL_VALUE: "${name}"]
         }
     }
 }
@@ -142,6 +126,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:multidex:1.0.3'
     implementation project(':mylibrary')
+    implementation project(':jiaozivideoplayer')
     // Okhttp库
     implementation 'com.squareup.okhttp3:okhttp:3.11.0'
     // Retrofit库
@@ -152,26 +137,16 @@ dependencies {
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.4'
     implementation 'org.greenrobot:eventbus:3.1.1'
 
-    
+
     implementation 'me.grantland:autofittextview:0.2.1'
     implementation 'com.youth.banner:banner:1.4.10'
-    //最新版本
 
-    // https://mvnrepository.com/artifact/com.zcy/acache
+
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
 
     //  分析错误日志
     debugImplementation 'me.drakeet.library:crashwoodpecker:0.9.83'
     releaseImplementation 'me.drakeet.library:crashwoodpecker-do-nothing:0.9.83'
-    implementation project(':jiaozivideoplayer')
 
-    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
-    implementation 'com.umeng.sdk:common:1.5.3'
-    //PushSDK必须依赖utdid库，所以需要加入对应依赖
-    implementation 'com.umeng.sdk:utdid:1.1.5.3'
-    //PushSDK
-    implementation 'com.umeng.sdk:push:4.2.0'
-    implementation 'com.umeng.sdk:push-xiaomi:1.0.0'
-    implementation 'com.umeng.sdk:push-huawei:1.0.0'
-    // 友盟
-    implementation 'com.umeng.analytics:analytics:6.1.4'
 }

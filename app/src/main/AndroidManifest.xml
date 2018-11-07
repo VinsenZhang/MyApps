@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.songshu.jucai">
+    package="com.tag.man">
 
 
     <!-- Required -->
     <permission
-        android:name="com.songshu.jucai.permission.JPUSH_MESSAGE"
+        android:name="com.tag.man.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature" />
 
     <!-- Required  一些系统要求的权限，如访问网络等-->
@@ -82,26 +82,14 @@
             android:screenOrientation="portrait" />
 
 
-        <!--UMENG-->
-
         <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="@string/umeng_appkey" />
-
-
-
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="${UMENG_CHANNEL_VALUE}" />
+            android:name="CHANNEL"
+            android:value="${CHANNEL_VALUE}" />
 
         <meta-data
             android:name=".adapter.GlobalGlideConfig"
             android:value="GlideModule" />
 
-        <activity
-            android:launchMode="singleTask"
-            android:exported="true"
-            android:name=".push.UmNotifyActivity" />
 
     </application>
 </manifest>
