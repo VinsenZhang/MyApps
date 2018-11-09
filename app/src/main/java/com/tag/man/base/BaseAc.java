@@ -27,12 +27,10 @@ public abstract class BaseAc extends SwipeBackActivity implements View.OnClickLi
 
     @Subscribe
     public void onEvent(MessageEvent message){
-
     }
 
     @Override
     public void onClick(View v) {
-
     }
 
     @Subscribe
@@ -77,59 +75,6 @@ public abstract class BaseAc extends SwipeBackActivity implements View.OnClickLi
         startActivityForResult(intent, requestCode);
     }
 
-
-    private long homeBackTime;
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    private boolean isbackground;
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (isbackground) {
-            isbackground = false;
-
-            long stayHomeTime = 0;
-            if (homeBackTime != 0) {
-                stayHomeTime = System.currentTimeMillis() - homeBackTime;
-                homeBackTime = System.currentTimeMillis();
-            }
-
-        }
-    }
-
-
-    public boolean isApplicationInBackground() {
-        ActivityManager am = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-        List<ActivityManager.RunningTaskInfo> taskList = am.getRunningTasks(1);
-        if (taskList != null && !taskList.isEmpty()) {
-            ComponentName topActivity = taskList.get(0).topActivity;
-            if (topActivity != null && !topActivity.getPackageName().equals(getPackageName())) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (isApplicationInBackground()) {
-            isbackground = true;
-            homeBackTime = System.currentTimeMillis();
-        }
-    }
 
     @Override
     public void onDestroy() {

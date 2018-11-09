@@ -1,4 +1,4 @@
-package com.tag.man.app.task;
+package com.tag.man.app.mail;
 
 import android.content.Context;
 import android.widget.ImageView;

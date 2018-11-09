@@ -1,15 +1,14 @@
-package com.tag.man.app.task;
+package com.tag.man.app.mail;
 
 
 import android.os.Bundle;
-import android.view.View;
 
 import com.tag.man.base.BaseFragment;
 
 /**
  * 任务页面
  */
-public class TaskFragment extends BaseFragment {
+public class MailFragment extends BaseFragment {
 
 
     @Override
@@ -18,12 +17,12 @@ public class TaskFragment extends BaseFragment {
     }
 
     @Override
-    public void initView(View contentView) {
+    public void initView() {
 
     }
 
     @Override
-    public void loadData(int model) {
+    public void loadData() {
 
     }
 

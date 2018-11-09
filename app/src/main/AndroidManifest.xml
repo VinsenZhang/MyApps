@@ -1,13 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tag.man">
-
 
     <!-- Required -->
     <permission
         android:name="com.tag.man.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature" />
 
-    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
     <uses-permission android:name="com.songshu.jucai.permission.JPUSH_MESSAGE" />
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -29,48 +29,39 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
 
-
     <application
         android:name=".MyApp"
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/app_logo"
         android:theme="@style/AppTheme">
-
-
         <activity
             android:name=".app.GuideAc"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
-
-
         <activity
             android:name=".app.SplashAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".app.main.MainAc"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".app.web.WebActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".wxapi.WXEntryActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".app.detail.VideoDetailActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -81,15 +72,17 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
 
-
         <meta-data
             android:name="CHANNEL"
             android:value="${CHANNEL_VALUE}" />
-
         <meta-data
             android:name=".adapter.GlobalGlideConfig"
             android:value="GlideModule" />
 
-
+        <activity android:name=".app.home.activity.NewsActivity" />
+        <activity android:name=".app.home.activity.MusicActivity" />
+        <activity android:name=".app.home.activity.VideoActivity" />
+        <activity android:name=".app.home.activity.StarActivity"></activity>
     </application>
+
 </manifest>

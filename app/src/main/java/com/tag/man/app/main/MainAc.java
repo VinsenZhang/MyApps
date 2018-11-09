@@ -3,6 +3,7 @@ package com.tag.man.app.main;
 
 import android.view.View;
 
+import com.tag.man.R;
 import com.tag.man.base.BaseAc;
 
 
@@ -17,7 +18,7 @@ public class MainAc extends BaseAc implements View.OnClickListener {
 
     @Override
     public int getLayoutRes() {
-        return 0;
+        return R.layout.activity_main;
     }
 
     @Override

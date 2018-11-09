@@ -24,8 +24,10 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
 
     protected Activity mActivity;
 
+    protected View contentView;
 
-    protected <T extends View> T find(View contentView, int resId) {
+
+    protected <T extends View> T find(int resId) {
         return contentView.findViewById(resId);
     }
 
@@ -65,8 +67,8 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View contentView = inflater.inflate(getLayoutRes(), container, false);
-        initView(contentView);
+        contentView = inflater.inflate(getLayoutRes(), container, false);
+        initView();
         return contentView;
     }
 
@@ -91,11 +93,10 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
     }
 
 
-    public void init(Bundle savedInstanceState) {
-    }
+    public void init(Bundle savedInstanceState) { }
 
 
-    public abstract void initView(View contentView);
+    public abstract void initView();
 
 
     public abstract void loadData();

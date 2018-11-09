@@ -1,12 +1,9 @@
 <resources>
-    <string name="app_name">松鼠资讯</string>
-    <string name="main_tab_home">首页</string>
-    <string name="main_tab_video">视频</string>
-    <string name="main_tab_task">赚钱</string>
+    <string name="app_name">TAG</string>
+    <string name="main_tab_home">资讯</string>
+    <string name="main_tab_video">排行</string>
+    <string name="main_tab_task">商城</string>
     <string name="main_tab_mine">我的</string>
-
-    <string name="umeng_appkey">5b29f290a40fa33fa7000011</string>
-
 
 
     <string name="please_install_wx_first">请先安装微信</string>
@@ -17,17 +14,13 @@
     <string name="cancel">取消</string>
     <string name="confirm">确认</string>
     <string name="del_text">删除</string>
-    <string name="choose_dislike_reason">选择理由,精准屏蔽(可多选)</string>
+
     <!--page title-->
-    <string name="task_title">任务中心</string>
     <string name="mine_favorite">我的收藏</string>
     <string name="mine_commend">我的消息</string>
     <string name="edit_info">编辑资料</string>
     <string name="mine_wallet">我的钱包</string>
     <string name="all_comment">所有评论</string>
-    <string name="bind_teacher_relation">绑定师徒关系</string>
-
-    <string name="mine_teacher">我的师傅</string>
 
 
     <string name="about_us">关于我们</string>
@@ -35,161 +28,12 @@
     <string name="logout">退出登录</string>
 
 
-    <string name="user_detail_bottom_tips">*除头像、昵称外，其他资料均自己可见，请放心填写</string>
     <string name="user_icon">头像</string>
-    <string name="app_id">松鼠ID</string>
     <string name="phone_num">手机号</string>
     <string name="nick_name">昵称</string>
-    <string name="sex">性别</string>
-    <string name="man">男</string>
-    <string name="woman">女</string>
-    <string name="birth">生日</string>
-    <string name="area">所在地区</string>
-    <string name="educational">教育背景</string>
-    <string name="hobby">兴趣</string>
-
 
     <string name="wechat_login">点击登录</string>
     <string name="mobile_login">手机登录</string>
 
 
-    <string name="how_money_fast">如何快速赚钱</string>
-    <string name="contact_custom">联系客服</string>
-    <string name="newer_help">新手帮助</string>
-    <string name="change_user_info">修改资料</string>
-    <string name="user_setting">用户设置</string>
-    <string name="bind_account">绑定帐号</string>
-    <string name="bind_withdraw_way">绑定提现微信支付宝</string>
-
-    <string name="fill_invitation_code">手动填写邀请码</string>
-    <string name="invitation_code">邀请码</string>
-    <string name="please_fill_invitation_code">请输入邀请码</string>
-    <string name="submit">提交</string>
-
-    <string name="account_left">账户余额(元)</string>
-    <string name="today_income">今日收入(金币)</string>
-    <string name="income_from_tudi">徒弟贡献(元)</string>
-    <string name="income_detail">收入明细</string>
-    <string name="withdraw_income_detail">提现/收入明细</string>
-
-    <string name="bind_teacher">特别提醒\n\n1、邀请码可以从邀请人处获取\n\n2、师徒关系一旦绑定成功，不可修改\n\n</string>
-    <string name="wallet_tips">1000金币≈1元，金币收入会根据当日兑换比率自动存入余额</string>
-    <string name="total_income">累计收益(元)</string>
-    <string name="withdraw">提现</string>
-    <string name="all_replays">所有回复</string>
-    <string name="withdraw_record">提现记录</string>
-    <string name="withdraw_style">提现方式</string>
-    <string name="click_to_copy_your_invite_code">点击复制你的邀请码</string>
-
-    <string name="mine_tudi">我的徒弟</string>
-    <string name="mine_tudi_tudi">我的徒孙</string>
-    <string name="invite_prize">邀请奖励</string>
-    <string name="shoutu">收徒</string>
-
-    <string name="sign">签到</string>
-    <string name="unlogin">未登录</string>
-
-    <string name="once_more_exit">再按一次退出松鼠资讯</string>
-    <string name="have_no_comment">还没有评论，快来抢沙发!</string>
-    <string name="send">发送</string>
-    <string name="good_comment_easy_to_seen">听说好的评论更容易被看到...</string>
-    <string name="look_today_income_detail">查看今日收益详情</string>
-    <string name="remind">提示:是否删除</string>
-    <string name="look_all">查看全文</string>
-    <string name="search">搜索</string>
-    <string name="search_hint">请输入关键词</string>
-    <string name="title">标题</string>
-
-    <string name="login_can_look_all_comment">登录才能查看所有评论</string>
-    <string name="login_can_favorite">登录才能收藏</string>
-    <string name="login_can_share">登录才能分享</string>
-    <string name="prize_introduce">奖励及分成说明</string>
-
-    <string name="withdraw_tips">1. 每天只允许提现一次；\n\n2. 提现正常三个工作日内到账；\n\n3. 周六周日和法定节假日不支付</string>
-    <string name="tips_bind_alipay">特别提醒：\n\n1、“收款人姓名”应为该支付宝实名认证的真实姓名\n\n</string>
-    <string name="tips_unbindwechat">特别提醒：\n\n1、短信验证码60秒内只能获取1次。\n\n2、获取验证码后，按系统提示操作即可解绑\n\n</string>
-    <string name="tips_unbindwechat2">特别提醒：\n\n1、短信验证码1小时内只能获取3次，请勿重复提交\n\n2、解绑后可在"我的"-"绑定账号"，重新绑定\n\n</string>
-
-    <string name="tips_of_bind_mobile">特别提醒：\n\n1、短信验证码60秒内只能获取1次。\n\n2、获取验证码后，按系统提示操作即可绑定\n\n</string>
-
-    <string name="user_login_protocol">登录即代表同意[松鼠资讯用户协议]</string>
-    <string name="wechat_onekey_login">微信一键登录</string>
-    <string name="login">登录</string>
-
-
-    <string name="sms_code">验证码</string>
-    <string name="please_input_sms_code">请输入验证码</string>
-    <string name="get_sms_code">获取验证码</string>
-
-    <string name="please_input_phone">请输入手机号码</string>
-
-    <string name="please_input_right_phone">请输入正确的手机号码</string>
-
-    <string name="can_use_overplus_money">可用余额:￥</string>
-    <string name="withdraw_all">全部提现</string>
-    <string name="withdraw_five">五元提现</string>
-
-    <string name="have_subscribe_cate">已经订阅的频道</string>
-    <string name="more_cate">更多频道</string>
-    <string name="click_to_add_more">(点击添加更多)</string>
-    <string name="modify">编辑</string>
-    <string name="finish">完成</string>
-    <string name="change_text">文字大小</string>
-
-    <string name="bind_alipay">绑定支付宝</string>
-    <string name="bind_wechat">绑定微信</string>
-    <string name="bind_mobile">绑定手机号</string>
-    <string name="alipay_account">支付宝帐号</string>
-    <string name="please_input_alipay_account">请输入支付宝帐号</string>
-
-
-    <string name="unbind">解绑</string>
-    <string name="unbind_alipay">解绑提现支付宝</string>
-    <string name="unbind_wechat">解绑提现微信</string>
-    <string name="mobile_sms_login">短信登录</string>
-    <string name="mobile_sms_code">获取短信验证码</string>
-    <string name="mobile_login_tips">适合使用真实的手机号码</string>
-
-    <string name="please_input_right_alipay_account">请输入正确的支付宝帐号</string>
-    <string name="please_input_right_alipay_user_name">请输入正确的真实姓名</string>
-
-    <string name="name_of_payee">收款人姓名</string>
-    <string name="please_input_payee_name">请输入收款人姓名</string>
-
-
-    <string name="home_click_tab_recommend_tips">点击文章列表中带有红包标志的文章，即可获得额外红包奖励，该奖励与普通文章的阅读红包是叠加的</string>
-    <string name="home_red_time_click_tips">当倒计时结束后，系统会刷新随机红包资讯，您可以资讯列表中看到并阅读领取</string>
-    <string name="dongjie_shuoming">① 收徒成功共奖励5元\n② 徒弟激活后解冻1元\n③ 徒弟提现后解冻4元\n④ 分成收入，徒弟（徒孙）提现后解冻</string>
-
-    <string name="retry">重试</string>
-    <string name="please_check_your_net">请先检查你的网络是否可用</string>
-
-    <string name="exit_and_retry_or_connect_custom">退出应用重试,或者联系客服</string>
-
-
-    <string name="update_now">立即更新</string>
-    <string name="update_later">暂不更新</string>
-    <string name="last_look_position">刚刚看到这里，点击刷新</string>
-    <string name="downloading">努力下载中，请耐心等待</string>
-
-
-    <string name="detail_text_size_smallest">最小</string>
-    <string name="detail_text_size_small">小</string>
-    <string name="detail_text_size_normal">标准</string>
-    <string name="detail_text_size_large">大</string>
-    <string name="detail_text_size_largest">最大</string>
-
-    <string name="article">文章</string>
-    <string name="video">视频</string>
-    <string name="education_title">选择教育程度</string>
-    <string-array name="background">
-        <item>本科</item>
-        <item>大学专科（大专）</item>
-        <item>小学</item>
-        <item>初中</item>
-        <item>高中/中专</item>
-        <item>硕士</item>
-        <item>博士</item>
-
-    </string-array>
 </resources>

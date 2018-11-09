@@ -1,15 +1,14 @@
-package com.tag.man.app.video;
+package com.tag.man.app.rank;
 
 
 import android.os.Bundle;
-import android.view.View;
 
 import com.tag.man.base.BaseFragment;
 
 /**
  * 视频页面
  */
-public class VideoFragment extends BaseFragment {
+public class RankFragment extends BaseFragment {
 
 
     @Override
@@ -18,7 +17,7 @@ public class VideoFragment extends BaseFragment {
     }
 
     @Override
-    public void initView(View contentView) {
+    public void initView() {
 
     }
 
