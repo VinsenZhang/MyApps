@@ -40,9 +40,9 @@ public class MyApp extends MultiDexApplication implements Thread.UncaughtExcepti
 
         PreUtils.init(this);
 
-        initRetrofit();
+        //initRetrofit();
 
-        initAppConfig();
+        //initAppConfig();
 
         CrashWoodpecker.init(this);
 

@@ -46,7 +46,6 @@ public class MyWebViewClient extends WebViewClient {
             if (!url.contains("version=")) {
                 url = url + version_string;
             }
-            MyApp.getApp().openUrl(url);
             return true;
         }
         return super.shouldOverrideUrlLoading(view, url);

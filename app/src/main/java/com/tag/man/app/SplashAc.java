@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.View;
 
 import com.tag.man.BuildConfig;
+import com.tag.man.R;
 import com.tag.man.app.main.MainAc;
 import com.tag.man.mylibrary.comm.CommUtils;
 import com.tag.man.mylibrary.comm.PreUtils;
@@ -21,15 +23,22 @@ public class SplashAc extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_splash);
 
 
         splashAdWidth = CommUtils.getScreenWith(this);
         splashAdHeight = CommUtils.getScreenHeight(this) * 4 / 5;
 
 
-    }
+        findViewById(R.id.skip_tv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goNext();
+            }
+        });
 
+
+    }
 
 
     private void goNext() {

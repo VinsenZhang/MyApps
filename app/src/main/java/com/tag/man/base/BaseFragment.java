@@ -19,17 +19,13 @@ import com.tag.man.eventbus.MessageEvent;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
+import butterknife.ButterKnife;
+
 
 public abstract class BaseFragment extends Fragment implements View.OnClickListener {
 
     protected Activity mActivity;
 
-    protected View contentView;
-
-
-    protected <T extends View> T find(int resId) {
-        return contentView.findViewById(resId);
-    }
 
 
     @Override
@@ -67,8 +63,8 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        contentView = inflater.inflate(getLayoutRes(), container, false);
-        initView();
+        View contentView = inflater.inflate(getLayoutRes(), container, false);
+        ButterKnife.bind(this, contentView);
         return contentView;
     }
 
@@ -94,9 +90,6 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
 
 
     public void init(Bundle savedInstanceState) { }
-
-
-    public abstract void initView();
 
 
     public abstract void loadData();

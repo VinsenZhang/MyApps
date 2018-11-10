@@ -20,10 +20,10 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:gravity="center"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
@@ -39,10 +39,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
@@ -58,10 +58,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
@@ -77,10 +77,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
@@ -97,6 +97,12 @@
 
 
     </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recommend_ry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

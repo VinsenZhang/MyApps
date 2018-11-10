@@ -19,14 +19,6 @@ public abstract class MyCallBack implements Callback<HttpResponse> {
     @Override
     public void onResponse(Call<HttpResponse> call, Response<HttpResponse> response) {
         try {
-            if (TextUtils.isEmpty(response.body().getMessage())) {
-                response.body().setMessage(response.body().getResult_message());
-            }
-
-            if (!TextUtils.isEmpty(response.body().getResult_code())) {
-                response.body().setCode(Integer.valueOf(response.body().getResult_code()));
-            }
-
             if (response.body().getCode() == 200) {
                 onSuccessful(response.body());
             } else {

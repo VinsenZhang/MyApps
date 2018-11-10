@@ -1,8 +1,6 @@
 package com.tag.man.app.home;
 
-import android.os.Bundle;
-import android.view.View;
-
+import com.tag.man.R;
 import com.tag.man.base.BaseFragment;
 
 
@@ -14,17 +12,6 @@ public class HomeFragment extends BaseFragment {
     private static final String TAG = HomeFragment.class.getSimpleName();
 
 
-
-    @Override
-    public void init(Bundle savedInstanceState) {
-
-    }
-
-    @Override
-    public void initView() {
-
-    }
-
     @Override
     public void loadData() {
 
@@ -32,6 +19,6 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     public int getLayoutRes() {
-        return 0;
+        return R.layout.fragment_home;
     }
 }

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.tag.man.BuildConfig;
+import com.tag.man.R;
 import com.tag.man.app.main.MainAc;
 import com.tag.man.mylibrary.comm.PreUtils;
 
@@ -24,11 +25,11 @@ public class GuideAc extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_guide);
+        setContentView(R.layout.activity_guide);
 
         PreUtils.saveBool(BuildConfig.VERSION_NAME, true);
 
-        ViewPager viewPager = null;// = findViewById(R.id.guide_vp);
+        ViewPager viewPager = findViewById(R.id.guide_vp);
 
         ImageView imgOne = new ImageView(this);
         imgOne.setScaleType(ImageView.ScaleType.FIT_XY);

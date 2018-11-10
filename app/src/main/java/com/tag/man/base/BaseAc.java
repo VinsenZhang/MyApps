@@ -20,7 +20,7 @@ import org.greenrobot.eventbus.Subscribe;
 
 import java.util.List;
 
-public abstract class BaseAc extends SwipeBackActivity implements View.OnClickListener{
+public abstract class BaseAc extends SwipeBackActivity {
 
     protected Activity mActivity;
 
@@ -29,9 +29,6 @@ public abstract class BaseAc extends SwipeBackActivity implements View.OnClickLi
     public void onEvent(MessageEvent message){
     }
 
-    @Override
-    public void onClick(View v) {
-    }
 
     @Subscribe
     @Override
