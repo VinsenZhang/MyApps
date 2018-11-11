@@ -44,6 +44,11 @@
             android:name=".app.main.MainAc"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
+
+        <activity android:name=".app.home.activity.MusicActivity" />
+        <activity android:name=".app.home.activity.NewsActivity" />
+        <activity android:name=".app.home.activity.StarActivity" />
+        <activity android:name=".app.home.activity.VideoActivity" />
         <!--<activity-->
             <!--android:name=".app.web.WebActivity"-->
             <!--android:screenOrientation="portrait" />-->
@@ -70,10 +75,6 @@
             <!--android:name=".adapter.GlobalGlideConfig"-->
             <!--android:value="GlideModule" />-->
 
-        <!--<activity android:name=".app.home.activity.NewsActivity" />-->
-        <!--<activity android:name=".app.home.activity.MusicActivity" />-->
-        <!--<activity android:name=".app.home.activity.VideoActivity" />-->
-        <!--<activity android:name=".app.home.activity.StarActivity"/>-->
     </application>
 
 </manifest>

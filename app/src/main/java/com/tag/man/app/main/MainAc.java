@@ -74,8 +74,6 @@ public class MainAc extends BaseAc {
 
     @Override
     public void init() {
-        ButterKnife.bind(this);
-
 
         fragmentManager = getSupportFragmentManager();
 

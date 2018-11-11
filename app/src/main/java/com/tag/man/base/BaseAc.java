@@ -20,6 +20,8 @@ import org.greenrobot.eventbus.Subscribe;
 
 import java.util.List;
 
+import butterknife.ButterKnife;
+
 public abstract class BaseAc extends SwipeBackActivity {
 
     protected Activity mActivity;
@@ -42,6 +44,7 @@ public abstract class BaseAc extends SwipeBackActivity {
 
         EventBus.getDefault().register(this);
         setContentView(getLayoutRes());
+        ButterKnife.bind(mActivity);
         init();
         loadData();
     }

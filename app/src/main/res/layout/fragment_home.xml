@@ -20,6 +20,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/news_layout"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -39,6 +40,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/music_layout"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -58,6 +60,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/video_layout"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -77,6 +80,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/star_layout"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -98,6 +102,12 @@
 
     </LinearLayout>
 
+    <TextView
+        android:text="推荐"
+        android:layout_marginTop="20sp"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/home_recommend_ry"

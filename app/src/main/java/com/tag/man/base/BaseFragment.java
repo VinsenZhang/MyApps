@@ -65,6 +65,7 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
                              Bundle savedInstanceState) {
         View contentView = inflater.inflate(getLayoutRes(), container, false);
         ButterKnife.bind(this, contentView);
+        loadData();
         return contentView;
     }
 
